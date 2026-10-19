@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum JavaScript</title>
+</head>
+<body>
+    <h1>Pengenalan JavaScript</h1>
+    <p id="pesan">Konten awal.</p>
+
+<h1>Cek Bilangan Genap atau Ganjil</h1>
+
+    <input type="number" id="angka" placeholder="Masukkan bilangan">
+    <button type="button" onclick="cekBilangan()">Periksa</button>
+
+    <p id="hasil"></p>
+
+<h1>Mengubah Warna Latar</h1>
+
+    <button type="button" onclick="ubahWarnaLatar('lightgreen')">
+        Latar Hijau
+    </button>
+
+    <button type="button" onclick="ubahWarnaLatar('white')">
+        Latar Putih
+    </button>
+
+    <button type="button" onclick="ubahWarnaLatar('lightyellow')">
+        Latar Kuning
+    </button>
+
+    <h1>Daftar Menu Makanan</h1>
+
+    <label>
+        <input type="checkbox" class="menu" value="5000">
+        Ayam Goreng — Rp5.000
+    </label>
+
+    <br>
+    <label>
+    <input type="checkbox" class="menu" value="10000">
+    Bakso — Rp10.000
+    </label>
+<br>
+
+<label>
+    <input type="checkbox" class="menu" value="3000">
+    Es Teh — Rp3.000
+</label>
+<br>
+
+    <label>
+        <input type="checkbox" class="menu" value="500">
+        Tempe — Rp500
+    </label>
+    <br>
+
+    <label>
+        <input type="checkbox" class="menu" value="2500">
+        Telur Dadar — Rp2.500
+    </label>
+    <br>
+
+    <p>Total: Rp<span id="total">0</span></p>
+
+<h1>Kalkulator Nilai Mahasiswa</h1>
+
+    <form id="formNilai">
+        <label>Nilai Tugas:
+            <input type="number" id="tugas" min="0" max="100" required>
+        </label>
+        <br><br>
+
+        <label>Nilai UTS:
+            <input type="number" id="uts" min="0" max="100" required>
+        </label>
+        <br><br>
+
+        <label>Nilai UAS:
+            <input type="number" id="uas" min="0" max="100" required>
+        </label>
+        <br><br>
+
+        <button type="submit">Hitung Nilai</button>
+    </form>
+
+
+    <h2>Eksperimen 1: Operasi Dua Nilai</h2>
+        <button type="button" onclick="inputDuaNilai()">Masukkan Dua Nilai</button>
+    <p id="hasilOperasi"></p>
+
+    <hr>
+
+    <h2>Eksperimen 2: Tabel Perkalian 7</h2>
+        <button type="button" onclick="tampilkanPerkalian7()">Tampilkan Tabel</button>
+    <div id="tabelPerkalian"></div>
+
+    <hr>
+
+    <h2>Eksperimen 3: Cek Bilangan Genap</h2>
+        <input type="number" id="inputGenap" placeholder="Masukkan bilangan bulat">
+        <button type="button" onclick="periksaGenap()">Periksa</button>
+    <p id="hasilGenap"></p>
+
+
+    <hr>
+    
+
+<h1>Eksperimen 4: Validasi Form</h1>
+<p>Isi semua kolom di bawah ini. Tidak boleh ada kolom yang kosong.</p>
+
+<form id="formValidasi">
+    <label for="namaValidasi">Nama:</label>
+    <input type="text" id="namaValidasi" placeholder="Masukkan nama">
+    <br><br>
+
+    <label for="emailValidasi">Email:</label>
+    <input type="email" id="emailValidasi" placeholder="Masukkan email">
+    <br><br>
+
+    <label for="kelasValidasi">Kelas:</label>
+    <input type="text" id="kelasValidasi" placeholder="Masukkan kelas">
+    <br><br>
+
+    <button type="submit">Kirim Data</button>
+</form>
+
+<p id="hasilValidasi"></p>
+
+
+<h2>Eksperimen 6: Sembunyikan/Tampilkan</h2>
+
+<button type="button" onclick="ubahTampilan()">Sembunyikan/Tampilkan Teks</button>
+
+<p id="teksToggle">Ini adalah teks yang bisa disembunyikan atau ditampilkan.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
